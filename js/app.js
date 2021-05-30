@@ -10,21 +10,16 @@ btnHamburger.addEventListener('click', function () {
 });
 
 // Mouse Tracking Image Feature
-const mainImage = $(".main-img-place");
-
+const mainImage = $(".main-img-container");
 $(document).mousemove(function (e) {
     var x = e.pageX;
     var pageWidth = $(document).width();
-    var breakpoint = pageWidth / 5
-    if (x < breakpoint) {
-        mainImage.attr("src", "/assets/images/-2.jpg");
-    } else if (x > breakpoint && x < 2 * breakpoint) {
-        mainImage.attr("src", "/assets/images/-1.jpg");
-    } else if (x > 2 * breakpoint && x < 3 * breakpoint) {
-        mainImage.attr("src", "/assets/images/0.jpg");
-    } else if (x > 3 * breakpoint && x < 4 * breakpoint) {
-        mainImage.attr("src", "/assets/images/1.jpg");
-    } else if (x > 4 * breakpoint && x < pageWidth) {
-        mainImage.attr("src", "/assets/images/2.jpg");
+    var numImgs = 13;
+    var breakpoint = pageWidth / numImgs
+
+    for (var i = 0; i <= numImgs; i++) {
+        if (x > i * breakpoint && x < (i + 1) * breakpoint) {
+            mainImage.css("background-image", `url("/assets/images/${i-Math.floor(numImgs/2)}.png")`);
+        }
     }
 });

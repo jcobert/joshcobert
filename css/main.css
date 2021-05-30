@@ -11726,14 +11726,16 @@ main {
 }
 
 .main-img-container {
-  background-color: #e8e8e8;
-  margin-top: 10rem;
-  width: 30rem;
-  height: 30rem;
-}
-
-.main-img-place {
-  display: block;
-  text-align: center;
+  margin-top: 4rem;
+  background-image: url("/assets/images/0.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  width: 20vw;
+  max-width: 20rem;
+  min-width: 16rem;
+  height: 20vh;
+  max-height: 20rem;
+  min-height: 16rem;
 }
 /*# sourceMappingURL=main.css.map */
