@@ -18,9 +18,16 @@
 
     }
 
-    &__menu { // Mobile menu
+    .name-logo {
+        margin: 0;
+        color: black;
+        font-family: 'Source Code Pro', monospace;
+    }
 
-        > span {
+    &__menu {
+        // Mobile menu
+
+        >span {
             display: block;
             width: 1.5rem;
             height: 0.125rem;
@@ -28,22 +35,22 @@
             transition: all 300ms ease-in-out;
             transform-origin: 2px 1px;
 
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-bottom: 0.1875rem;
                 margin-bottom: 5px;
             }
         }
 
         &.open {
-            > span:first-child {
+            >span:first-child {
                 transform: rotate(45deg);
             }
 
-            > span:nth-child(2) {
+            >span:nth-child(2) {
                 opacity: 0;
             }
 
-            > span:last-child {
+            >span:last-child {
                 transform: rotate(-45deg);
             }
         }
@@ -54,10 +61,11 @@
         a {
             position: relative;
             font-size: 1.125rem;
+            font-family: 'Source Code Pro', monospace;
             color: rgb(33, 112, 196);
             transition: color 300ms ease-in-out;
 
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-right: 2rem;
             }
 
@@ -76,7 +84,7 @@
 
             &:hover {
                 color: rgb(90, 159, 228);
-                
+
                 &::before {
                     opacity: 1;
                 }
@@ -88,15 +96,10 @@
         font-size: 1.125rem;
         color: white;
         transition: opacity 300ms ease-in-out;
-        
+
         &:hover {
             opacity: 0.875;
         }
     }
 
 }
-
-
-
-
-
