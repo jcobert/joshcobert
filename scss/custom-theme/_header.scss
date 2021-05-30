@@ -1,0 +1,102 @@
+.header {
+    padding: 0 0.75rem;
+    // background: linear-gradient(to bottom, rgb(45, 45, 45), rgb(0, 0, 0) );
+    background-color: rgba(235, 235, 235, 0.79);
+
+    nav {
+        height: 4rem;
+    }
+
+    &__logo {
+
+        img {
+            width: 4rem;
+            height: auto;
+            // margin-top: 0.375rem;           
+        }
+
+
+    }
+
+    &__menu { // Mobile menu
+
+        > span {
+            display: block;
+            width: 1.5rem;
+            height: 0.125rem;
+            background-color: rgb(33, 112, 196);
+            transition: all 300ms ease-in-out;
+            transform-origin: 2px 1px;
+
+            &:not(:last-child){
+                margin-bottom: 0.1875rem;
+                margin-bottom: 5px;
+            }
+        }
+
+        &.open {
+            > span:first-child {
+                transform: rotate(45deg);
+            }
+
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+
+            > span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &__links {
+
+        a {
+            position: relative;
+            font-size: 1.125rem;
+            color: rgb(33, 112, 196);
+            transition: color 300ms ease-in-out;
+
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                height: 0.1rem;
+                left: 0;
+                right: 0;
+                bottom: -14px;
+                background: linear-gradient(to left, rgb(33, 112, 196), rgb(90, 159, 228));
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+            &:hover {
+                color: rgb(90, 159, 228);
+                
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__cta {
+        font-size: 1.125rem;
+        color: white;
+        transition: opacity 300ms ease-in-out;
+        
+        &:hover {
+            opacity: 0.875;
+        }
+    }
+
+}
+
+
+
+
+
