@@ -3,16 +3,17 @@
 }
 
 .main-img-container {
-    margin-top: 4rem;
-    // background-color: rgb(245, 245, 245);
-    background-image: url("/assets/images/0.png");
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    background-image: url("/assets/images/logo-warp-imgs/0.png");
     background-repeat: no-repeat;    
     background-position: center;
     background-size: 50%;
-    width: 20vw;
+    width: 10%;
     max-width: 20rem;
     min-width: 16rem;
-    height: 20vh;
+    height: 10%;
     max-height: 20rem;
     min-height: 16rem;
 }
