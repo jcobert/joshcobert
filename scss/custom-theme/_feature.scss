@@ -1,10 +1,20 @@
 .welcome {
-    color: white;
+    color: black;
+    margin-top: 6rem;
+    
+    &__heading {
+        font-family: $comfortaa;
+    }
+
+    &__blurb {
+        font-family: $righteous;
+    }
 }
 
 .main-img-container {
-    position: absolute;
-    top: 35%;
+    margin: 0;
+    position: relative;
+    top: 40%;
     left: 40%;
     background-image: url("/assets/images/logo-warp-imgs/0.png");
     background-repeat: no-repeat;    
@@ -16,5 +26,23 @@
     height: 10%;
     max-height: 20rem;
     min-height: 16rem;
+    visibility: hidden;
 }
 
+
+// Projects Section
+.project-deck {
+    padding: 8rem 4rem 2rem;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.project-card {
+    text-align: center;
+    // border: 1px solid rgb(172, 172, 172);
+    
+    &:hover {
+        color: rgb(33, 112, 196);
+    }
+}

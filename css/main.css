@@ -11729,12 +11729,22 @@ main {
 }
 
 .welcome {
-  color: white;
+  color: black;
+  margin-top: 6rem;
+}
+
+.welcome__heading {
+  font-family: "'Comfortaa', cursive";
+}
+
+.welcome__blurb {
+  font-family: "'Righteous', cursive";
 }
 
 .main-img-container {
-  position: absolute;
-  top: 35%;
+  margin: 0;
+  position: relative;
+  top: 40%;
   left: 40%;
   background-image: url("/assets/images/logo-warp-imgs/0.png");
   background-repeat: no-repeat;
@@ -11746,5 +11756,20 @@ main {
   height: 10%;
   max-height: 20rem;
   min-height: 16rem;
+  visibility: hidden;
+}
+
+.project-deck {
+  padding: 8rem 4rem 2rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.project-card {
+  text-align: center;
+}
+
+.project-card:hover {
+  color: #2170c4;
 }
 /*# sourceMappingURL=main.css.map */
