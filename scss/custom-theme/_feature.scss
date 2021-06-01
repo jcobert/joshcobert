@@ -1,8 +1,10 @@
+// Welcome Section
 .welcome {
     margin-top: 6rem;
     
     &__heading {
         font-family: $flamenco;
+        font-size: 4rem;
         color: $theme-2;
     }
 
@@ -12,6 +14,8 @@
     }
 }
 
+
+// Mouse-tracking image
 .main-img-container {
     margin: 0;
     position: relative;

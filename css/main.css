@@ -11601,12 +11601,12 @@ main {
   content: "";
   position: absolute;
   display: block;
-  height: 0.1rem;
+  height: 0.082rem;
   left: 0;
   right: 0;
-  bottom: -14px;
-  background: -webkit-gradient(linear, right top, left top, from(#2170c4), to(#5a9fe4));
-  background: linear-gradient(to left, #2170c4, #5a9fe4);
+  bottom: -0.8rem;
+  background: -webkit-gradient(linear, left top, right top, from(#5a9fe4), to(#2170c4));
+  background: linear-gradient(to right, #5a9fe4, #2170c4);
   opacity: 0;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
@@ -11741,6 +11741,7 @@ main {
 
 .welcome__heading {
   font-family: "Flamenco", cursive;
+  font-size: 4rem;
   color: #2170c4;
 }
 
