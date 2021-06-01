@@ -1,13 +1,14 @@
 .welcome {
-    color: black;
     margin-top: 6rem;
     
     &__heading {
-        font-family: $comfortaa;
+        font-family: $flamenco;
+        color: $theme-2;
     }
 
     &__blurb {
-        font-family: $righteous;
+        color: black;
+        padding-top: 2rem;
     }
 }
 

@@ -11544,7 +11544,14 @@ main {
 .header .name-logo {
   margin: 0;
   color: black;
-  font-family: 'Source Code Pro', monospace;
+  font-size: 1.8rem;
+  font-family: "Flamenco", cursive;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.header .name-logo:hover {
+  color: #2170c4;
 }
 
 .header__menu > span {
@@ -11729,16 +11736,17 @@ main {
 }
 
 .welcome {
-  color: black;
   margin-top: 6rem;
 }
 
 .welcome__heading {
-  font-family: "'Comfortaa', cursive";
+  font-family: "Flamenco", cursive;
+  color: #2170c4;
 }
 
 .welcome__blurb {
-  font-family: "'Righteous', cursive";
+  color: black;
+  padding-top: 2rem;
 }
 
 .main-img-container {
