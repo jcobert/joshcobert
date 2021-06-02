@@ -72,7 +72,7 @@
     color: white;
 
     &:hover {
-        color: rgb(83, 202, 255);
+        color: $theme-1;
     }
 
     @include media-breakpoint-down(sm) {

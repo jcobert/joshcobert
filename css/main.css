@@ -11475,9 +11475,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 400;
   color: black;
   line-height: 1.3;
 }
@@ -11546,8 +11546,8 @@ main {
   color: black;
   font-size: 1.8rem;
   font-family: "Flamenco", cursive;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .header .name-logo:hover {
@@ -11589,8 +11589,8 @@ main {
   font-size: 1.125rem;
   font-family: 'Source Code Pro', monospace;
   color: #2170c4;
-  -webkit-transition: color 300ms ease-in-out;
-  transition: color 300ms ease-in-out;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
 }
 
 .header__links a:not(:last-child) {
@@ -11623,8 +11623,8 @@ main {
 .header__cta {
   font-size: 1.125rem;
   color: white;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
+  -webkit-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
 }
 
 .header__cta:hover {
@@ -11701,7 +11701,7 @@ main {
 }
 
 .social-link:hover {
-  color: #53caff;
+  color: #5a9fe4;
 }
 
 @media (max-width: 575.98px) {
@@ -11747,6 +11747,7 @@ main {
 
 .welcome__blurb {
   color: black;
+  font-weight: 400;
   padding-top: 2rem;
 }
 
@@ -11769,16 +11770,26 @@ main {
 }
 
 .project-deck {
-  padding: 8rem 4rem 2rem;
-  margin-left: 0;
-  margin-right: 0;
+  padding: 4rem 4rem 2rem;
+  margin: 6rem 0 0 0;
 }
 
 .project-card {
   text-align: center;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.project-card .card-header {
+  background-color: #fafafa;
+  padding: 1rem 1rem;
 }
 
 .project-card:hover {
   color: #2170c4;
+  border-color: #5a9fe4;
+  font-size: larger;
+  -webkit-box-shadow: #b1b1b1 0 0 1rem 0.25rem;
+          box-shadow: #b1b1b1 0 0 1rem 0.25rem;
 }
 /*# sourceMappingURL=main.css.map */
