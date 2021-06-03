@@ -11739,16 +11739,48 @@ main {
   margin-top: 6rem;
 }
 
+@media (max-width: 767.98px) {
+  .welcome {
+    margin-top: 2.7rem;
+  }
+}
+
 .welcome__heading {
   font-family: "Flamenco", cursive;
-  font-size: 4rem;
+  font-size: 4.2rem;
   color: #2170c4;
+}
+
+@media (max-width: 991.98px) {
+  .welcome__heading {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .welcome__heading {
+    font-size: 2.4rem;
+  }
 }
 
 .welcome__blurb {
   color: black;
   font-weight: 400;
+  line-height: 1.5;
   padding-top: 2rem;
+  width: 50%;
+}
+
+@media (max-width: 991.98px) {
+  .welcome__blurb {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .welcome__blurb {
+    padding: 2rem 1.5rem;
+  }
 }
 
 .main-img-container {
@@ -11771,7 +11803,7 @@ main {
 
 .project-deck {
   padding: 4rem 4rem 2rem;
-  margin: 6rem 0 0 0;
+  margin: 4rem 0 0 0;
 }
 
 .project-card {
