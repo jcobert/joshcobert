@@ -1,9 +1,10 @@
 .header {
     padding: 0 0.75rem;
-    // background: linear-gradient(to bottom, rgb(45, 45, 45), rgb(0, 0, 0) );
     background-color: rgba(255, 255, 255, 0.954);
+    box-shadow: rgb(177, 177, 177) 0 -0.5rem 1rem 0.25rem;
     position: fixed;
     width: 100%;
+    z-index: 1;
     
     nav {
         height: 4rem;
