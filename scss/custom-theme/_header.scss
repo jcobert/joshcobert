@@ -1,8 +1,10 @@
 .header {
     padding: 0 0.75rem;
     // background: linear-gradient(to bottom, rgb(45, 45, 45), rgb(0, 0, 0) );
-    background-color: rgba(235, 235, 235, 0.79);
-
+    background-color: rgba(255, 255, 255, 0.954);
+    position: fixed;
+    width: 100%;
+    
     nav {
         height: 4rem;
     }
@@ -21,7 +23,13 @@
     .name-logo {
         margin: 0;
         color: black;
-        font-family: 'Source Code Pro', monospace;
+        font-size: 1.8rem;
+        font-family: $flamenco;
+        transition: all 250ms ease-in-out;
+
+        &:hover {
+            color: $theme-2;           
+        }
     }
 
     &__menu {
@@ -31,7 +39,7 @@
             display: block;
             width: 1.5rem;
             height: 0.125rem;
-            background-color: rgb(33, 112, 196);
+            background-color: $theme-2;
             transition: all 300ms ease-in-out;
             transform-origin: 2px 1px;
 
@@ -62,8 +70,8 @@
             position: relative;
             font-size: 1.125rem;
             font-family: 'Source Code Pro', monospace;
-            color: rgb(33, 112, 196);
-            transition: color 300ms ease-in-out;
+            color: $theme-2;
+            transition: color 250ms ease-in-out;
 
             &:not(:last-child) {
                 margin-right: 2rem;
@@ -73,17 +81,17 @@
                 content: "";
                 position: absolute;
                 display: block;
-                height: 0.1rem;
+                height: 0.082rem;
                 left: 0;
                 right: 0;
-                bottom: -14px;
-                background: linear-gradient(to left, rgb(33, 112, 196), rgb(90, 159, 228));
+                bottom: -0.8rem;
+                background: linear-gradient(to right, $theme-1, $theme-2);
                 opacity: 0;
                 transition: opacity 300ms ease-in-out;
             }
 
             &:hover {
-                color: rgb(90, 159, 228);
+                color: $theme-1;
 
                 &::before {
                     opacity: 1;
@@ -95,7 +103,7 @@
     &__cta {
         font-size: 1.125rem;
         color: white;
-        transition: opacity 300ms ease-in-out;
+        transition: opacity 250ms ease-in-out;
 
         &:hover {
             opacity: 0.875;

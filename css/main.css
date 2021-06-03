@@ -11475,11 +11475,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 400;
   color: black;
   line-height: 1.3;
+  background-color: rgba(250, 250, 250, 0.954);
 }
 
 a, a:visited, a:hover {
@@ -11529,7 +11530,9 @@ main {
 
 .header {
   padding: 0 0.75rem;
-  background-color: rgba(235, 235, 235, 0.79);
+  background-color: rgba(255, 255, 255, 0.954);
+  position: fixed;
+  width: 100%;
 }
 
 .header nav {
@@ -11544,7 +11547,14 @@ main {
 .header .name-logo {
   margin: 0;
   color: black;
-  font-family: 'Source Code Pro', monospace;
+  font-size: 1.8rem;
+  font-family: "Flamenco", cursive;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.header .name-logo:hover {
+  color: #2170c4;
 }
 
 .header__menu > span {
@@ -11582,8 +11592,8 @@ main {
   font-size: 1.125rem;
   font-family: 'Source Code Pro', monospace;
   color: #2170c4;
-  -webkit-transition: color 300ms ease-in-out;
-  transition: color 300ms ease-in-out;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
 }
 
 .header__links a:not(:last-child) {
@@ -11594,12 +11604,12 @@ main {
   content: "";
   position: absolute;
   display: block;
-  height: 0.1rem;
+  height: 0.082rem;
   left: 0;
   right: 0;
-  bottom: -14px;
-  background: -webkit-gradient(linear, right top, left top, from(#2170c4), to(#5a9fe4));
-  background: linear-gradient(to left, #2170c4, #5a9fe4);
+  bottom: -0.8rem;
+  background: -webkit-gradient(linear, left top, right top, from(#5a9fe4), to(#2170c4));
+  background: linear-gradient(to right, #5a9fe4, #2170c4);
   opacity: 0;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
@@ -11616,8 +11626,8 @@ main {
 .header__cta {
   font-size: 1.125rem;
   color: white;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
+  -webkit-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
 }
 
 .header__cta:hover {
@@ -11694,7 +11704,7 @@ main {
 }
 
 .social-link:hover {
-  color: #53caff;
+  color: #5a9fe4;
 }
 
 @media (max-width: 575.98px) {
@@ -11729,12 +11739,57 @@ main {
 }
 
 .welcome {
-  color: white;
+  margin-top: 10rem;
+}
+
+@media (max-width: 767.98px) {
+  .welcome {
+    margin-top: 6rem;
+  }
+}
+
+.welcome__heading {
+  font-family: "Flamenco", cursive;
+  font-size: 4.2rem;
+  color: #2170c4;
+}
+
+@media (max-width: 991.98px) {
+  .welcome__heading {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .welcome__heading {
+    font-size: 2.4rem;
+  }
+}
+
+.welcome__blurb {
+  color: black;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 2rem;
+  width: 50%;
+}
+
+@media (max-width: 991.98px) {
+  .welcome__blurb {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .welcome__blurb {
+    padding: 2rem 1.5rem;
+  }
 }
 
 .main-img-container {
-  position: absolute;
-  top: 35%;
+  margin: 0;
+  position: relative;
+  top: 40%;
   left: 40%;
   background-image: url("/assets/images/logo-warp-imgs/0.png");
   background-repeat: no-repeat;
@@ -11746,5 +11801,37 @@ main {
   height: 10%;
   max-height: 20rem;
   min-height: 16rem;
+  visibility: hidden;
+}
+
+.project-deck {
+  padding: 4rem 4rem 2rem;
+  margin: 4rem 0 0 0;
+}
+
+@media (max-width: 767.98px) {
+  .project-deck {
+    padding: 2rem;
+    margin: 2rem 0 0 0;
+  }
+}
+
+.project-card {
+  text-align: center;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.project-card .card-header {
+  background-color: #fafafa;
+  padding: 1rem 1rem;
+}
+
+.project-card:hover {
+  color: #2170c4;
+  border-color: #5a9fe4;
+  font-size: larger;
+  -webkit-box-shadow: #b1b1b1 0 0 1rem 0.25rem;
+          box-shadow: #b1b1b1 0 0 1rem 0.25rem;
 }
 /*# sourceMappingURL=main.css.map */
