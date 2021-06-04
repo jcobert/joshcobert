@@ -11789,29 +11789,24 @@ main {
   }
 }
 
+.img-container {
+  margin: 4rem auto 0 auto;
+}
+
 .main-img-container {
-  margin: 0;
-  position: relative;
-  top: 40%;
-  left: 40%;
   background-image: url("/assets/images/logo-warp-imgs/0.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
-  width: 10%;
-  max-width: 20rem;
-  min-width: 16rem;
-  height: 10%;
-  max-height: 20rem;
-  min-height: 16rem;
-  visibility: hidden;
+  margin: auto;
+  display: inline-block;
+  width: 16rem;
+  height: 16rem;
 }
 
 .project-deck {
   padding: 4rem 0 2rem;
-  margin-top: 4rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 4rem auto 0 auto;
 }
 
 @media (max-width: 767.98px) {
