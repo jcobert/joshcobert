@@ -11877,15 +11877,50 @@ main {
 }
 
 .project-card .card-header {
-  background-color: #fafafa;
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 1rem 1rem;
+}
+
+.project-card .card-body {
+  background-color: rgba(57, 57, 57, 0.85);
+}
+
+.project-card .project-title {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.project-card .project-title a {
+  color: black;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.project-card .project-desc {
+  text-align: left;
+  color: white;
+  text-shadow: 0 0 1rem black;
 }
 
 .project-card:hover {
   color: #2170c4;
   border-color: #5a9fe4;
-  font-size: larger;
   -webkit-box-shadow: #b1b1b1 0 0 1rem 0.25rem;
           box-shadow: #b1b1b1 0 0 1rem 0.25rem;
+  font-size: 1.15rem;
+}
+
+.project-card:hover .project-title a {
+  color: #2170c4;
+}
+
+.project-card:hover .project-title a:hover {
+  color: #5a9fe4;
+}
+
+#geoguessr {
+  background-image: url("/assets/images/projects/geoguessr-screen-shot.png");
 }
 /*# sourceMappingURL=main.css.map */
