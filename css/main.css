@@ -11649,18 +11649,17 @@ main {
 .header .modal-content {
   width: 100%;
   height: auto;
-  border-radius: 4rem;
   opacity: 94%;
 }
 
 .header .modal-header {
   border-color: #5a9fe4;
-  background-color: #53caff;
+  background-color: #fafafa;
 }
 
 .header .modal-nav-body {
   margin-top: 0;
-  background-color: rgba(255, 255, 255, 0.954);
+  background-color: #fafafa;
   padding-bottom: 1.4rem;
   padding-top: 1.4rem;
 }
@@ -11679,7 +11678,7 @@ main {
 }
 
 .header .modal-nav-body ul li a {
-  color: white;
+  color: #2170c4;
 }
 
 .header .icon-modal-close {

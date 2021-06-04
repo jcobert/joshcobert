@@ -10,11 +10,6 @@ btnHamburger.addEventListener('click', function () {
     $('#navModal').modal('toggle');
 });
 
-// $(document).click(function() {
-//     if ($('body').hasClass('modal-open') === false) {
-//         btnHamburger.classList.remove('open');
-//     }
-// });
 
 
 // Mouse Tracking Image Feature
