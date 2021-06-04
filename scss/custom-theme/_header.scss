@@ -5,7 +5,7 @@
     position: fixed;
     width: 100%;
     z-index: 1;
-    
+
     nav {
         height: 4rem;
     }
@@ -29,12 +29,12 @@
         transition: all 250ms ease-in-out;
 
         &:hover {
-            color: $theme-2;           
+            color: $theme-2;
         }
     }
 
     // Mobile menu
-    &__menu {        
+    &__menu {
 
         >span {
             display: block;
@@ -111,4 +111,50 @@
         }
     }
 
+    // Modal menu
+    #navModal {
+        margin-top: 4rem;
+        z-index: 1;
+    }
+
+    .modal-content {
+        width: 100%;
+        height: auto;
+        border-radius: 4rem;
+        opacity: 94%;
+    }
+
+    .modal-header {
+        // border-bottom: none;
+        border-color: $theme-1;
+        background-color: $theme-3;
+    }
+
+    .modal-nav-body {
+        margin-top: 0;
+        background-color: rgba(255, 255, 255, 0.954);
+        padding-bottom: 1.4rem;
+        padding-top: 1.4rem;
+    }
+
+    .modal-nav-body ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .modal-nav-body ul li {
+        text-align: center;
+        font-size: 130%;
+        padding: 8px;
+
+        a {
+            color: white;
+        }
+    }
+
+    .icon-modal-close {
+        color: white;
+    }
 }

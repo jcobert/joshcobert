@@ -11528,6 +11528,10 @@ main {
           flex-grow: 1;
 }
 
+.modal-backdrop {
+  z-index: 0;
+}
+
 .header {
   padding: 0 0.75rem;
   background-color: rgba(255, 255, 255, 0.954);
@@ -11635,6 +11639,51 @@ main {
 
 .header__cta:hover {
   opacity: 0.875;
+}
+
+.header #navModal {
+  margin-top: 4rem;
+  z-index: 1;
+}
+
+.header .modal-content {
+  width: 100%;
+  height: auto;
+  border-radius: 4rem;
+  opacity: 94%;
+}
+
+.header .modal-header {
+  border-color: #5a9fe4;
+  background-color: #53caff;
+}
+
+.header .modal-nav-body {
+  margin-top: 0;
+  background-color: rgba(255, 255, 255, 0.954);
+  padding-bottom: 1.4rem;
+  padding-top: 1.4rem;
+}
+
+.header .modal-nav-body ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.header .modal-nav-body ul li {
+  text-align: center;
+  font-size: 130%;
+  padding: 8px;
+}
+
+.header .modal-nav-body ul li a {
+  color: white;
+}
+
+.header .icon-modal-close {
+  color: white;
 }
 
 .footer-container {

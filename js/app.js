@@ -1,3 +1,4 @@
+// Mobile Menu
 const btnHamburger = document.getElementById('btnHamburger');
 
 btnHamburger.addEventListener('click', function () {
@@ -6,8 +7,15 @@ btnHamburger.addEventListener('click', function () {
     } else {
         btnHamburger.classList.add('open');
     }
-
+    $('#navModal').modal('toggle');
 });
+
+// $(document).click(function() {
+//     if ($('body').hasClass('modal-open') === false) {
+//         btnHamburger.classList.remove('open');
+//     }
+// });
+
 
 // Mouse Tracking Image Feature
 const mainImage = $(".main-img-container");
