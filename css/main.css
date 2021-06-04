@@ -11531,8 +11531,11 @@ main {
 .header {
   padding: 0 0.75rem;
   background-color: rgba(255, 255, 255, 0.954);
+  -webkit-box-shadow: #b1b1b1 0 -0.5rem 1rem 0.25rem;
+          box-shadow: #b1b1b1 0 -0.5rem 1rem 0.25rem;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .header nav {
@@ -11786,33 +11789,30 @@ main {
   }
 }
 
+.img-container {
+  margin: 4rem auto 0 auto;
+}
+
 .main-img-container {
-  margin: 0;
-  position: relative;
-  top: 40%;
-  left: 40%;
   background-image: url("/assets/images/logo-warp-imgs/0.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
-  width: 10%;
-  max-width: 20rem;
-  min-width: 16rem;
-  height: 10%;
-  max-height: 20rem;
-  min-height: 16rem;
-  visibility: hidden;
+  margin: auto;
+  display: inline-block;
+  width: 16rem;
+  height: 16rem;
 }
 
 .project-deck {
-  padding: 4rem 4rem 2rem;
-  margin: 4rem 0 0 0;
+  padding: 4rem 0 2rem;
+  margin: 4rem auto 0 auto;
 }
 
 @media (max-width: 767.98px) {
   .project-deck {
     padding: 2rem;
-    margin: 2rem 0 0 0;
+    margin-top: 2rem;
   }
 }
 
@@ -11820,6 +11820,12 @@ main {
   text-align: center;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+}
+
+@media (max-width: 991.98px) {
+  .project-card {
+    margin-bottom: 2rem;
+  }
 }
 
 .project-card .card-header {
