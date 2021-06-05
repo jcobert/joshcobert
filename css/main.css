@@ -11885,6 +11885,25 @@ main {
   background-color: rgba(57, 57, 57, 0.85);
 }
 
+.project-card .card-footer {
+  background-color: rgba(57, 57, 57, 0.85);
+  border: none;
+  padding: 0.8rem 1rem 1.2rem;
+}
+
+.project-card .card-footer a {
+  color: white;
+  text-shadow: 0 0 1rem black;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 0.25rem;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.project-card .card-footer a i {
+  margin-left: 0.7rem;
+}
+
 .project-card .project-title {
   text-align: left;
   line-height: 1.5;
@@ -11902,6 +11921,8 @@ main {
   text-align: left;
   color: white;
   text-shadow: 0 0 1rem black;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .project-card:hover {
@@ -11909,6 +11930,9 @@ main {
   border-color: #5a9fe4;
   -webkit-box-shadow: #b1b1b1 0 0 1rem 0.25rem;
           box-shadow: #b1b1b1 0 0 1rem 0.25rem;
+}
+
+.project-card:hover .project-desc {
   font-size: 1.15rem;
 }
 
@@ -11918,6 +11942,18 @@ main {
 
 .project-card:hover .project-title a:hover {
   color: #5a9fe4;
+}
+
+.project-card:hover .card-footer a {
+  font-size: 1.25rem;
+  padding: 0.5rem 0.8rem;
+  border-color: rgba(165, 223, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.project-card:hover .card-footer a:hover {
+  color: #5a9fe4;
+  border: 0.01rem solid #5a9fe4;
 }
 
 #geoguessr {
