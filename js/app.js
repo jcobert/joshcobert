@@ -22,6 +22,7 @@ $(function () {
             seeMore($(p).attr("id"));
         });
     }
+    console.log(window.location.hash);
 });
 
 function seeMore(id) {

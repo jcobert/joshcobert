@@ -11981,4 +11981,8 @@ main {
 #projects button:hover {
   color: #5a9fe4;
 }
+
+#projects .project {
+  padding-top: 4rem;
+}
 /*# sourceMappingURL=main.css.map */
