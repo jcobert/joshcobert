@@ -11891,7 +11891,7 @@ main {
   padding: 0.8rem 1rem 1.2rem;
 }
 
-.project-card .card-footer a {
+.project-card .card-footer a, .project-card .card-footer button {
   color: white;
   text-shadow: 0 0 1rem black;
   border: 1px solid rgba(255, 255, 255, 0);
@@ -11900,7 +11900,7 @@ main {
   transition: all 250ms ease-in-out;
 }
 
-.project-card .card-footer a i {
+.project-card .card-footer a i, .project-card .card-footer button i {
   margin-left: 0.7rem;
 }
 
@@ -11944,14 +11944,14 @@ main {
   color: #5a9fe4;
 }
 
-.project-card:hover .card-footer a {
+.project-card:hover .card-footer a, .project-card:hover .card-footer button {
   font-size: 1.25rem;
   padding: 0.5rem 0.8rem;
   border-color: rgba(165, 223, 255, 0.1);
   background-color: rgba(0, 0, 0, 0.15);
 }
 
-.project-card:hover .card-footer a:hover {
+.project-card:hover .card-footer a:hover, .project-card:hover .card-footer button:hover {
   color: #5a9fe4;
   border: 0.01rem solid #5a9fe4;
 }
@@ -11970,5 +11970,15 @@ main {
 
 #projects .project-details {
   margin-top: 3rem;
+}
+
+#projects button {
+  font-size: 1rem;
+  border: none;
+  background: none;
+}
+
+#projects button:hover {
+  color: #5a9fe4;
 }
 /*# sourceMappingURL=main.css.map */

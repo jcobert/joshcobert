@@ -10,4 +10,14 @@
     .project-details {
         margin-top: 3rem;
     }
+
+    button {
+        font-size: 1rem;
+        border: none;
+        background: none;
+
+        &:hover {
+            color: $theme-1;
+        }
+    }
 }
