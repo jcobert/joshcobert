@@ -14,11 +14,11 @@
     <script src="https://kit.fontawesome.com/88b061ab7b.js" crossorigin="anonymous"></script>
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/main.css">
-    <title>Home | Josh Cobert</title>
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+    <title>Projects | Josh Cobert</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
 </head>
 
-<body>
+<body class="has-see-more">
     <div class="page-wrapper">
         <header class="header">
             <nav class="flex flex-jc-sb flex-ai-c container">
@@ -68,53 +68,63 @@
         </header>
         <main>
             <div class="container welcome">
-                <h1 class="welcome__heading">Hey, I'm Josh Cobert</h1>
-                <p class="welcome__blurb">Thanks for paying me a visit. I am a web developer and creative professional.
-                    I like long walks on the beach and refactoring code. Please check out some of the projects I have
-                    worked on and feel free to reach out if you'd like to collaborate!</p>
+                <h1 class="welcome__heading">Projects</h1>
             </div>
 
-            <div class="row container img-container">
-                <!-- <div class="main-img-container"></div> -->
-            </div>
-
-            <div class="row container project-deck">
-                <div class="col-lg-4 col-sm-12">
-                    <div class="card project-card" id="geoguessr">
-                        <div class="card-header">
-                            <h4 class="project-title"><a href="/projects.html#project-geoguessr">Geoguessr Location Generator</a></h4>
+            <section id="projects">
+                <div class="row container project-deck">
+                    <div class="col-lg-12 col-sm-12 project" id="project-geoguessr">
+                        <div class="card project-card" id="geoguessr">
+                            <div class="card-header">
+                                <h4 class="project-title"><a href="#">Geoguessr Location Generator</a></h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="project-desc">A simple Python script for generating a random list of locations
+                                    for
+                                    use in creating a map in the Geoguessr game.</p>
+                                <div class="project-details hidden">
+                                    <p class="project-desc">Some more text...</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="see-more">See more<i class="fas fa-angle-down"></i></button>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <p class="project-desc">A simple Python script for generating a random list of locations
-                                for
-                                use in creating a map in the Geoguessr game.</p>
+                    </div>
+                    <div class="col-lg-12 col-sm-12" id="project-project2">
+                        <div class="card project-card" id="project2">
+                            <div class="card-header">
+                                <h4 class="project-title"><a href="#">Project 2</a></h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="project-desc">This is a description</p>
+                                <div class="project-details hidden">
+                                    <p class="project-desc">Some more text...</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="see-more">See more<i class="fas fa-angle-down"></i></button>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <a href="/projects.html#project-geoguessr">Check it out<i class="fas fa-angle-right"></i></a>
+                    </div>
+                    <div class="col-lg-12 col-sm-12" id="project-project3">
+                        <div class="card project-card" id="project3">
+                            <div class="card-header">
+                                <h4 class="project-title"><a href="#">Project 3</a></h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="project-desc">This is a description</p>
+                                <div class="project-details hidden">
+                                    <p class="project-desc">Some more text...</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="see-more">See more<i class="fas fa-angle-down"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-12">
-                    <div class="card project-card" id="project2">
-                        <div class="card-header">
-                            <h4 class="project-title"><a href="/projects.html#project-project2">Project 2</a></h4>
-                        </div>
-                        <div class="card-body">
-                            <p class="project-desc">This is a description.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <div class="card project-card" id="project3">
-                        <div class="card-header">
-                            <h4 class="project-title"><a href="/projects.html#project-project3">Project 3</a></h4>
-                        </div>
-                        <div class="card-body">
-                            <p class="project-desc">This is a description.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
 
 
 

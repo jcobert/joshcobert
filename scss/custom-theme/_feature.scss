@@ -98,7 +98,7 @@
         border: none;
         padding: 0.8rem 1rem 1.2rem;
 
-        a {
+        a, button {
             color: white;
             text-shadow: 0 0 1rem black;
             border: 1px solid rgba(255, 255, 255, 0);
@@ -147,7 +147,7 @@
             }
         }
 
-        .card-footer a {
+        .card-footer a, .card-footer button {
             font-size: 1.25rem;
             padding: 0.5rem 0.8rem;
             border-color: rgba(165, 223, 255, 0.1);
