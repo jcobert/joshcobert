@@ -66,101 +66,107 @@
 
 
 // Projects Section
-.project-deck {
-    padding: 4rem 0 2rem;
-    margin: 4rem auto 0 auto;
+#project-previews {
 
-    @include media-breakpoint-down(md) {
-        padding: 2rem;
-        margin-top: 2rem;
-    }
-}
+    .project-deck {
+        padding: 4rem 0 2rem;
+        margin: 4rem auto 0 auto;
 
-.project-card {
-    text-align: center;
-    transition: all 250ms ease-in-out;
-
-    @include media-breakpoint-down(lg) {
-        margin-bottom: 2rem;
+        @include media-breakpoint-down(md) {
+            padding: 2rem;
+            margin-top: 2rem;
+        }
     }
 
-    .card-header {
-        background-color: rgba(255, 255, 255, 0.95);
-        padding: 1rem 1rem;
-    }
+    .project-card {
+        text-align: center;
+        transition: all 250ms ease-in-out;
 
-    .card-body {
-        background-color: rgba(57, 57, 57, 0.85);
-    }
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 2rem;
+        }
 
-    .card-footer {
-        background-color: rgba(57, 57, 57, 0.85);
-        border: none;
-        padding: 0.8rem 1rem 1.2rem;
+        .card-header {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 1rem 1rem;
+        }
 
-        a, button {
-            color: white;
-            text-shadow: 0 0 1rem black;
-            border: 1px solid rgba(255, 255, 255, 0);
-            border-radius: 0.25rem;
-            transition: all 250ms ease-in-out;
+        .card-body {
+            background-color: rgba(57, 57, 57, 0.85);
+        }
 
-            i {
-                margin-left: 0.7rem;
+        .card-footer {
+            background-color: rgba(57, 57, 57, 0.85);
+            border: none;
+            padding: 0.8rem 1rem 1.2rem;
+
+            a,
+            button {
+                color: white;
+                text-shadow: 0 0 1rem black;
+                border: 1px solid rgba(255, 255, 255, 0);
+                border-radius: 0.25rem;
+                transition: all 250ms ease-in-out;
+
+                i {
+                    margin-left: 0.7rem;
+                }
             }
         }
-    }
 
-    .project-title {
-        text-align: left;
-        line-height: 1.5;
-        font-size: 1.5rem;
-        margin-bottom: 0;
+        .project-title {
+            text-align: left;
+            line-height: 1.5;
+            font-size: 1.5rem;
+            margin-bottom: 0;
 
-        a {
-            color: black;
-            transition: all 250ms ease-in-out;
+            a {
+                color: black;
+                transition: all 250ms ease-in-out;
+            }
         }
-    }
-
-    .project-desc {
-        text-align: left;
-        color: white;
-        text-shadow: 0 0 1rem black;
-        transition: all 250ms ease-in-out;
-    }
-
-    &:hover {
-        color: $theme-2;
-        border-color: $theme-1;
-        box-shadow: rgb(177, 177, 177) 0 0 1rem 0.25rem;
 
         .project-desc {
-            font-size: 1.15rem;
+            text-align: left;
+            color: white;
+            text-shadow: 0 0 1rem black;
+            transition: all 250ms ease-in-out;
         }
 
-        .project-title a {
+        &:hover {
             color: $theme-2;
+            border-color: $theme-1;
+            box-shadow: rgb(177, 177, 177) 0 0 1rem 0.25rem;
 
-            &:hover {
-                color: $theme-1;
+            .project-desc {
+                font-size: 1.15rem;
             }
-        }
 
-        .card-footer a, .card-footer button {
-            font-size: 1.25rem;
-            padding: 0.5rem 0.8rem;
-            border-color: rgba(165, 223, 255, 0.1);
-            background-color: rgba(0, 0, 0, 0.15);
+            .project-title a {
+                color: $theme-2;
 
-            &:hover {
-                color: $theme-1;
-                border: 0.01rem solid $theme-1;
+                &:hover {
+                    color: $theme-1;
+                }
+            }
+
+            .card-footer a,
+            .card-footer button {
+                font-size: 1.25rem;
+                padding: 0.5rem 0.8rem;
+                border-color: rgba(165, 223, 255, 0.1);
+                background-color: rgba(0, 0, 0, 0.15);
+
+                &:hover {
+                    color: $theme-1;
+                    border: 0.01rem solid $theme-1;
+                }
             }
         }
     }
-}
 
-#geoguessr {
-    background-image: url("/assets/images/projects/geoguessr-screen-shot.png");
+    #geoguessr {
+        background-image: url("/assets/images/projects/geoguessr-screen-shot.png");
+    }
+
 }

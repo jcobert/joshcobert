@@ -11532,6 +11532,10 @@ main {
   z-index: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 .header {
   padding: 0 0.75rem;
   background-color: rgba(255, 255, 255, 0.954);
@@ -11852,46 +11856,47 @@ main {
   height: 16rem;
 }
 
-.project-deck {
+#project-previews .project-deck {
   padding: 4rem 0 2rem;
   margin: 4rem auto 0 auto;
 }
 
 @media (max-width: 767.98px) {
-  .project-deck {
+  #project-previews .project-deck {
     padding: 2rem;
     margin-top: 2rem;
   }
 }
 
-.project-card {
+#project-previews .project-card {
   text-align: center;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
 }
 
 @media (max-width: 991.98px) {
-  .project-card {
+  #project-previews .project-card {
     margin-bottom: 2rem;
   }
 }
 
-.project-card .card-header {
+#project-previews .project-card .card-header {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 1rem 1rem;
 }
 
-.project-card .card-body {
+#project-previews .project-card .card-body {
   background-color: rgba(57, 57, 57, 0.85);
 }
 
-.project-card .card-footer {
+#project-previews .project-card .card-footer {
   background-color: rgba(57, 57, 57, 0.85);
   border: none;
   padding: 0.8rem 1rem 1.2rem;
 }
 
-.project-card .card-footer a, .project-card .card-footer button {
+#project-previews .project-card .card-footer a,
+#project-previews .project-card .card-footer button {
   color: white;
   text-shadow: 0 0 1rem black;
   border: 1px solid rgba(255, 255, 255, 0);
@@ -11900,24 +11905,25 @@ main {
   transition: all 250ms ease-in-out;
 }
 
-.project-card .card-footer a i, .project-card .card-footer button i {
+#project-previews .project-card .card-footer a i,
+#project-previews .project-card .card-footer button i {
   margin-left: 0.7rem;
 }
 
-.project-card .project-title {
+#project-previews .project-card .project-title {
   text-align: left;
   line-height: 1.5;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 
-.project-card .project-title a {
+#project-previews .project-card .project-title a {
   color: black;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
 }
 
-.project-card .project-desc {
+#project-previews .project-card .project-desc {
   text-align: left;
   color: white;
   text-shadow: 0 0 1rem black;
@@ -11925,68 +11931,92 @@ main {
   transition: all 250ms ease-in-out;
 }
 
-.project-card:hover {
+#project-previews .project-card:hover {
   color: #2170c4;
   border-color: #5a9fe4;
   -webkit-box-shadow: #b1b1b1 0 0 1rem 0.25rem;
           box-shadow: #b1b1b1 0 0 1rem 0.25rem;
 }
 
-.project-card:hover .project-desc {
+#project-previews .project-card:hover .project-desc {
   font-size: 1.15rem;
 }
 
-.project-card:hover .project-title a {
+#project-previews .project-card:hover .project-title a {
   color: #2170c4;
 }
 
-.project-card:hover .project-title a:hover {
+#project-previews .project-card:hover .project-title a:hover {
   color: #5a9fe4;
 }
 
-.project-card:hover .card-footer a, .project-card:hover .card-footer button {
+#project-previews .project-card:hover .card-footer a,
+#project-previews .project-card:hover .card-footer button {
   font-size: 1.25rem;
   padding: 0.5rem 0.8rem;
   border-color: rgba(165, 223, 255, 0.1);
   background-color: rgba(0, 0, 0, 0.15);
 }
 
-.project-card:hover .card-footer a:hover, .project-card:hover .card-footer button:hover {
+#project-previews .project-card:hover .card-footer a:hover,
+#project-previews .project-card:hover .card-footer button:hover {
   color: #5a9fe4;
   border: 0.01rem solid #5a9fe4;
 }
 
-#geoguessr {
+#project-previews #geoguessr {
   background-image: url("/assets/images/projects/geoguessr-screen-shot.png");
 }
 
-#projects .project-deck {
-  margin-top: 0;
+.projects-deck {
+  padding: 2rem 0 2rem;
+  margin: 2rem auto 0 auto;
 }
 
-#projects .project-card {
+@media (max-width: 991.98px) {
+  .projects-deck {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+.projects-deck .project {
+  padding-top: 4rem;
+}
+
+.projects-deck .project-card {
   margin-bottom: 4rem;
 }
 
-#projects .hidden {
-  display: none;
+.projects-deck .project-title {
+  color: #2170c4;
 }
 
-#projects .project-details {
-  margin-top: 3rem;
-}
-
-#projects button {
+.projects-deck button {
   font-size: 1rem;
   border: none;
   background: none;
 }
 
-#projects button:hover {
+.projects-deck button i {
+  margin-left: 0.5rem;
+}
+
+.projects-deck button:hover {
   color: #5a9fe4;
 }
 
-#projects .project {
-  padding-top: 4rem;
+@media (max-width: 991.98px) {
+  .projects-deck .card-footer {
+    text-align: center;
+  }
+}
+
+.projects-deck .project-details {
+  margin-top: 3rem;
+}
+
+.projects-deck .social-icon {
+  margin-right: 0.7rem;
 }
 /*# sourceMappingURL=main.css.map */
