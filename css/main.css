@@ -11960,6 +11960,10 @@ main {
   background-image: url("/assets/images/projects/geoguessr-screen-shot.png");
 }
 
+#projects .project-deck {
+  margin-top: 0;
+}
+
 #projects .project-card {
   margin-bottom: 4rem;
 }
