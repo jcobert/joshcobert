@@ -11963,4 +11963,12 @@ main {
 #projects .project-card {
   margin-bottom: 4rem;
 }
+
+#projects .hidden {
+  display: none;
+}
+
+#projects .project-details {
+  margin-top: 3rem;
+}
 /*# sourceMappingURL=main.css.map */

@@ -11,6 +11,38 @@ btnHamburger.addEventListener('click', function () {
 });
 
 
+// Projects page animation
+$(function () {
+    if ($('body.has-see-more').length > 0) {
+        var projects = []
+        for (let i = 0; i < $(".see-more").length; i++) {
+            projects.push($(".project-card")[i]);
+        }
+        $.map(projects, function (p) {
+            seeMore($(p).attr("id"));
+        });
+    }
+});
+
+function seeMore(id) {
+    const details = $(`#${id} .project-details`);
+
+    $(`#${id} .see-more`).click(function () {
+        details.slideToggle(150);
+
+        if (details.hasClass("hidden")) {
+            details.removeClass("hidden");
+            $(this).html('Show less<i class="fas fa-angle-up">');
+        } else {
+            details.addClass("hidden");
+            $(this).html('See more<i class="fas fa-angle-down">');
+        }
+    });
+}
+
+
+
+
 
 // Mouse Tracking Image Feature
 const mainImage = $(".main-img-container");
