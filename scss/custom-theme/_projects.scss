@@ -1,18 +1,22 @@
-#projects {
-    .project-deck {
-        margin-top: 0;
+.projects-deck {
+    padding: 2rem 0 2rem;
+    margin: 2rem auto 0 auto;
+
+    @include media-breakpoint-down(lg) {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .project {
+        padding-top: 4rem;
     }
 
     .project-card {
         margin-bottom: 4rem;
     }
 
-    .hidden {
-        display: none;
-    }
-
-    .project-details {
-        margin-top: 3rem;
+    .project-title {
+        color: $theme-2;
     }
 
     button {
@@ -20,12 +24,29 @@
         border: none;
         background: none;
 
+        i {
+            margin-left: 0.5rem;
+        }
+
         &:hover {
             color: $theme-1;
+        }        
+    }
+
+    .card-footer {
+        @include media-breakpoint-down(lg) {
+            text-align: center;
         }
     }
 
-    .project {
-        padding-top: 4rem;
+
+    // Project details
+    .project-details {
+        margin-top: 3rem;        
+    }
+
+    .social-icon {
+        margin-right: 0.7rem;
     }
 }
+
