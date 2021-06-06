@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Flamenco:wght@300;400&family=Gochi+Hand&family=Itim&family=Poiret+One&family=Questrial&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Righteous&family=Rubik:wght@300;400;500;600;700;800;900&family=Source+Code+Pro:wght@200;300;400;500;600;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/88b061ab7b.js" crossorigin="anonymous"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home | Josh Cobert</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <nav class="flex flex-jc-sb flex-ai-c container">
+                <a href="/" class="header__logo">
+                    <h4 class="name-logo">Josh Cobert</h4>
+                </a>
+
+                <!-- <a href="#" id="btnHamburger" class="header__menu d-md-none">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a> -->
+
+                <button id="btnHamburger" class="navbar-toggler d-md-none header__menu" type="button"
+                    data-toggle="modal" data-target="#navModal">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="modal fade" id="navModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close navbar-toggler" data-dismiss="modal">
+                                    <!-- <i class="fas fa-times icon-modal-close"></i> -->
+                                </button>
+                            </div>
+                            <div class="modal-nav-body">
+                                <ul>
+                                    <li><a class="nav-item nav-link" href="#">Projects</a></li>
+                                    <li><a class="nav-item nav-link" href="#">About</a></li>
+                                    <li><a class="nav-item nav-link" href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="header__links d-none d-md-block">
+                    <a href="#">Projects</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container welcome">
+                <h1 class="welcome__heading">Projects</h1>
+            </div>
+
+
+            <div class="row container project-deck">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card project-card" id="geoguessr">
+                        <div class="card-header">
+                            <h4 class="project-title"><a href="#">Geoguessr Location Generator</a></h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="project-desc">A simple Python script for generating a random list of locations
+                                for
+                                use in creating a map in the Geoguessr game.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Check it out<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card project-card" id="project2">
+                        <div class="card-header">
+                            <h4 class="project-title"><a href="#">Project 2</a></h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="project-desc">This is a description.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card project-card" id="project3">
+                        <div class="card-header">
+                            <h4 class="project-title"><a href="#">Project 3</a></h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="project-desc">This is a description.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </main>
+        <footer class="footer-container">
+            <div class="container">
+                <div class="footer-cta">
+
+                </div>
+                <div class="footer-links">
+                    <ul class="nav footer-nav">
+                        <li class="nav-item nav-link nav-spacer">|</li>
+                        <li><a class="nav-item nav-link footer-nav-link" href="#"></a></li>
+                        <li class="nav-item nav-link nav-spacer">|</li>
+                        <li><a class="nav-item nav-link footer-nav-link" href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a class="social-link" href="https://www.linkedin.com/in/joshua-cobert/"><i
+                            class="fab fa-linkedin social-icon"></i></a>
+                    <a class="social-link" href="https://github.com/jcobert"><i
+                            class="fab fa-github social-icon"></i></a>
+                    <a class="social-link" href="mailto:josh@joshcobert.com"><i
+                            class="fas fa-envelope social-icon"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    <h6 class="copyright">© 2021 Josh Cobert</h6>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
