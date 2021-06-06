@@ -85,7 +85,8 @@
         "../scss/custom-theme/_globals.scss",
         "../scss/custom-theme/_header.scss",
         "../scss/custom-theme/_footer.scss",
-        "../scss/custom-theme/_feature.scss"
+        "../scss/custom-theme/_feature.scss",
+        "../scss/custom-theme/_projects.scss"
     ],
     "names": [],
     "file": "main.css"
