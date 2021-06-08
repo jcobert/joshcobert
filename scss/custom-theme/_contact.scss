@@ -1,8 +1,8 @@
-.contact-info {
-    color: black;
+.contact-methods {
     font-weight: 400;
     line-height: 1.5;
     padding-top: 2rem;
+    margin-top: 3rem;
     width: 50%;
 
     @include media-breakpoint-down(lg) {
@@ -11,5 +11,29 @@
 
     @include media-breakpoint-down(md) {
         padding: 2rem 1.5rem;
+        margin-top: 1rem;
     }
+}
+
+.contact-link {
+    color: $theme-2;
+    display: inline-block;
+    margin-bottom: 2rem;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+        color: $theme-1;
+        font-size: 1.2rem;
+
+        .contact-icon {
+            color: $theme-1;            
+        }
+    }
+}
+
+.contact-icon {
+    color: $theme-2;
+    font-size: 2rem;
+    margin-right: 1rem;
+    transition: all 250ms ease-in-out;
 }
