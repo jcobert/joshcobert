@@ -12019,4 +12019,24 @@ main {
 .projects-deck .social-icon {
   margin-right: 0.7rem;
 }
+
+.contact-info {
+  color: black;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 2rem;
+  width: 50%;
+}
+
+@media (max-width: 991.98px) {
+  .contact-info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contact-info {
+    padding: 2rem 1.5rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
