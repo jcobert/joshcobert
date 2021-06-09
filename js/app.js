@@ -1,13 +1,13 @@
 // Run on ready
 $(function () {
     // Mobile Menu
-    const btnHamburger = document.getElementById('btnHamburger');
+    const btnHamburger = $("#btnHamburger");
 
-    btnHamburger.addEventListener('click', function () {
-        if (btnHamburger.classList.contains('open')) {
-            btnHamburger.classList.remove('open');
+    btnHamburger.click(function () {
+        if (btnHamburger.hasClass('open')) {
+            btnHamburger.removeClass('open');
         } else {
-            btnHamburger.classList.add('open');
+            btnHamburger.addClass('open');
         }
         $('#navModal').modal('toggle');
     });
@@ -86,9 +86,6 @@ function cardHeightNormalization(cards) {
         };
         normalizeHeights();
 
-        if (condition) {
-
-        }
         $(window).on('resize orientationchange', function () {
             tallest = 0, heights.length = 0;
             items.each(function () {
