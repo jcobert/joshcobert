@@ -72,9 +72,8 @@
                             <h4 class="project-title">Geoguessr Location Generator</h4>
                         </div>
                         <div class="card-body">
-                            <p class="project-desc">A simple Python script for generating a random list of locations
-                                for
-                                use in creating a map in the Geoguessr game.</p>
+                            <p class="project-desc">A simple Python script for generating a random list of locations,
+                                for use in creating a map in the Geoguessr game.</p>
                             <div class="project-details hidden">
                                 <p>The program works by randomly generating a pair of latitude/longitude coordinates,
                                     querying that location against the Google Maps Street View API to check if it
@@ -83,14 +82,15 @@
                                 </p>
                                 <h5>Google Maps API</h5>
                                 <p>For more information on the Google Maps API, visit: <br>
-                                    <a href="https://developers.google.com/maps/documentation/streetview/overview">https://developers.google.com/maps/documentation/streetview/overview</a>
+                                    <a
+                                        href="https://developers.google.com/maps/documentation/streetview/overview">https://developers.google.com/maps/documentation/streetview/overview</a>
                                 </p>
                                 <h5>Geoguessr</h5>
                                 <p>For more information on Geoguessr and to play, visit: <br>
                                     <a href="https://www.geoguessr.com">https://www.geoguessr.com</a>
                                 </p>
-                                <p><i
-                                    class="fab fa-github social-icon"></i>View the code on <a href="https://github.com/jcobert/map-maker">GitHub</a></p>
+                                <p><i class="fab fa-github social-icon"></i>View the code on <a
+                                        href="https://github.com/jcobert/map-maker">GitHub</a></p>
                             </div>
                         </div>
                         <div class="card-footer">
@@ -98,15 +98,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-sm-12" id="project-project2">
-                    <div class="card project-card" id="project2">
+                <div class="col-lg-12 col-sm-12" id="project-live-stream">
+                    <div class="card project-card" id="live-stream">
                         <div class="card-header">
-                            <h4 class="project-title invisible">Project 2</h4>
+                            <h4 class="project-title">Facebook Live Stream Configurator</h4>
                         </div>
                         <div class="card-body">
-                            <p class="project-desc invisible">This is a description</p>
+                            <p class="project-desc">This program taps into the Facebook Live Video API and starts
+                                a new live stream. You can then configure your streaming software such as OBS, using the
+                                RTMPS secure stream URL provided by Facebook.</p>
                             <div class="project-details hidden">
-                                <p class="project-desc invisible">Some more text...</p>
+                                <p>The program works by sending a POST request to the Facebook Live Video API, passing
+                                    along parameters such as title and description for the live stream. A JSON object is
+                                    returned, which includes the secure stream URL. <br><br>
+                                    In the case of configuring OBS for Facebook streaming, the Facebook Live URL is
+                                    predefined and only the stream key must be entered. This program parses the stream
+                                    key from the JSON data and copies it to the clipboard so it can be easily pasted
+                                    into your streaming software.
+                                </p>
+                                <h5>Facebook Live Video API</h5>
+                                <p>For more information on OBS, visit: <br>
+                                    <a href="https://developers.facebook.com/docs/live-video-api/">https://developers.facebook.com/docs/live-video-api</a>
+                                </p>
+                                <h5>OBS</h5>
+                                <p>For more information on the Google Maps API, visit: <br>
+                                    <a
+                                        href="https://obsproject.com">https://obsproject.com</a>
+                                </p>                                
+                                <p><i class="fab fa-github social-icon"></i>View the code on <a
+                                        href="https://github.com/jcobert/facebook-live">GitHub</a></p>
                             </div>
                         </div>
                         <div class="card-footer">

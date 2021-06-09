@@ -1,18 +1,18 @@
-// Mobile Menu
-const btnHamburger = document.getElementById('btnHamburger');
-
-btnHamburger.addEventListener('click', function () {
-    if (btnHamburger.classList.contains('open')) {
-        btnHamburger.classList.remove('open');
-    } else {
-        btnHamburger.classList.add('open');
-    }
-    $('#navModal').modal('toggle');
-});
-
-
-// Projects page animation
+// Run on ready
 $(function () {
+    // Mobile Menu
+    const btnHamburger = $("#btnHamburger");
+
+    btnHamburger.click(function () {
+        if (btnHamburger.hasClass('open')) {
+            btnHamburger.removeClass('open');
+        } else {
+            btnHamburger.addClass('open');
+        }
+        $('#navModal').modal('toggle');
+    });
+
+    // Project page
     if ($('body.has-see-more').length > 0) {
         var projects = []
         for (let i = 0; i < $(".see-more").length; i++) {
@@ -21,15 +21,20 @@ $(function () {
         $.map(projects, function (p) {
             seeMore($(p).attr("id"));
         });
-        
+
         let activated = false;
         if (window.location.hash != "" && activated === false) {
             goToProject();
             activated = true;
         }
     }
+
+    // Project preview card heights
+    cardHeightNormalization("#project-previews .project-card");
 });
 
+
+// Projects page animation
 function seeMore(id) {
     const details = $(`#${id} .project-details`);
 
@@ -61,6 +66,38 @@ function goToProject() {
         $(`#${id} .see-more`).html('See more<i class="fas fa-angle-down">');
     }
 }
+
+
+// Normalize card heights
+function cardHeightNormalization(cards) {
+    var items = $(cards),
+        heights = [],
+        tallest;
+
+    if (items.length) {
+        function normalizeHeights() {
+            items.each(function () {
+                heights.push($(this).height());
+            });
+            tallest = Math.max.apply(null, heights);
+            items.each(function () {
+                $(this).css('min-height', tallest + 'px');
+            });
+        };
+        normalizeHeights();
+
+        $(window).on('resize orientationchange', function () {
+            tallest = 0, heights.length = 0;
+            items.each(function () {
+                $(this).css('min-height', '0');
+            });
+            normalizeHeights();
+        });
+    }
+}
+
+
+
 
 
 

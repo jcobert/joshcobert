@@ -11968,6 +11968,10 @@ main {
   background-image: url("/assets/images/projects/geoguessr-screen-shot.png");
 }
 
+#project-previews #live-stream {
+  background-image: url("/assets/images/projects/live-stream-screen-shot.png");
+}
+
 .projects-deck {
   padding: 2rem 0 2rem;
   margin: 2rem auto 0 auto;
