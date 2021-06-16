@@ -75,6 +75,25 @@
                             <p class="project-desc">A simple Python script for generating a random list of locations,
                                 for use in creating a map in the Geoguessr game.</p>
                             <div class="project-details hidden">
+                                <p>
+                                    When my friend showed me the Geoguessr game, I instantly fell in love with the
+                                    concept. If you’re not familiar, the premise is that you are placed in a random
+                                    location in the world in Google street view. You then have to guess exactly where
+                                    you are by looking around.
+                                </p>
+                                <p>
+                                    There is a feature to create a custom game by choosing locations on a map that you
+                                    can then share and play with others. The problem with this is that if you want to
+                                    play a map that you have created, you will know the locations in advance. What fun
+                                    is a game that you’re guaranteed to win?
+                                </p>
+                                <p>
+                                    I noticed that they included an option to import a CSV file with coordinates, as an
+                                    alternative to picking points on the map. I saw this as an opportunity to automate
+                                    the custom map creation and allow myself to play the games as well as others. By
+                                    having the computer pick the locations at random, I could play along with my friends
+                                    and be at no advantage.
+                                </p>
                                 <p>The program works by randomly generating a pair of latitude/longitude coordinates,
                                     querying that location against the Google Maps Street View API to check if it
                                     exists, and saving each valid location in a CSV file. This file can then be imported
@@ -108,6 +127,25 @@
                                 a new live stream. You can then configure your streaming software such as OBS, using the
                                 RTMPS secure stream URL provided by Facebook.</p>
                             <div class="project-details hidden">
+                                <p>
+                                    As the pandemic shook the world and my musician father could no longer perform live,
+                                    he decided to take to the virtual stage. He began performing and broadcasting
+                                    concerts through the Facebook Live platform, which brought with it a unique set of
+                                    challenges.
+                                </p>
+                                <p>
+                                    The process of starting a live stream through Facebook’s web portal and configuring
+                                    the streaming software on the computer turned out to be a bit cumbersome and
+                                    frustrating at times. Through the web portal, you generate a stream key, which you
+                                    then enter into the settings of your streaming software to start the broadcast. Many
+                                    times, however, the web page would not load or become unresponsive, which would
+                                    derail the whole endeavor.
+                                </p>
+                                <p>
+                                    I knew there had to be a more efficient and reliable way to achieve this task and
+                                    after a little bit of research, I familiarized myself with Facebook’s API and
+                                    created an applet to programmatically generate and retrieve a stream key.
+                                </p>
                                 <p>The program works by sending a POST request to the Facebook Live Video API, passing
                                     along parameters such as title and description for the live stream. A JSON object is
                                     returned, which includes the secure stream URL. <br><br>
@@ -118,13 +156,13 @@
                                 </p>
                                 <h5>Facebook Live Video API</h5>
                                 <p>For more information on OBS, visit: <br>
-                                    <a href="https://developers.facebook.com/docs/live-video-api/">https://developers.facebook.com/docs/live-video-api</a>
+                                    <a
+                                        href="https://developers.facebook.com/docs/live-video-api/">https://developers.facebook.com/docs/live-video-api</a>
                                 </p>
                                 <h5>OBS</h5>
                                 <p>For more information on the Google Maps API, visit: <br>
-                                    <a
-                                        href="https://obsproject.com">https://obsproject.com</a>
-                                </p>                                
+                                    <a href="https://obsproject.com">https://obsproject.com</a>
+                                </p>
                                 <p><i class="fab fa-github social-icon"></i>View the code on <a
                                         href="https://github.com/jcobert/facebook-live">GitHub</a></p>
                             </div>
