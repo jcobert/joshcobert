@@ -12000,6 +12000,9 @@ main {
 }
 
 .projects-deck button {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
   font-size: 1rem;
   border: none;
   background: none;
@@ -12013,6 +12016,12 @@ main {
 
 .projects-deck button:hover {
   color: #5a9fe4;
+}
+
+@media (max-width: 991.98px) {
+  .projects-deck button {
+    text-align: center;
+  }
 }
 
 @media (max-width: 991.98px) {
