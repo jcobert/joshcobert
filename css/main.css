@@ -11756,6 +11756,8 @@ main {
 .social-link {
   padding: 0.8rem;
   color: white;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .social-link:hover {
