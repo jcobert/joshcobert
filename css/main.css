@@ -12003,6 +12003,8 @@ main {
   font-size: 1rem;
   border: none;
   background: none;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .projects-deck button i {
