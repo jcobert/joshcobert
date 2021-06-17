@@ -12002,6 +12002,7 @@ main {
 .projects-deck button {
   display: inline-block;
   width: 100%;
+  padding: 0.5625rem 1rem;
   text-align: left;
   font-size: 1rem;
   border: none;
@@ -12024,10 +12025,20 @@ main {
   }
 }
 
+.projects-deck .card-footer {
+  padding: 0;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
 @media (max-width: 991.98px) {
   .projects-deck .card-footer {
     text-align: center;
   }
+}
+
+.projects-deck .card-footer:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .projects-deck .project-details {

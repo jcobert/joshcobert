@@ -22,6 +22,7 @@
     button {
         display: inline-block;
         width: 100%;
+        padding: 0.5625rem 1rem;
         text-align: left;
         font-size: 1rem;
         border: none;
@@ -34,27 +35,33 @@
 
         &:hover {
             color: $theme-1;
-        }  
-        
+        }
+
         @include media-breakpoint-down(lg) {
             text-align: center;
         }
     }
 
     .card-footer {
+        padding: 0;
+        transition: all 150ms ease-in-out;
+
         @include media-breakpoint-down(lg) {
             text-align: center;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.05);
         }
     }
 
 
     // Project details
     .project-details {
-        margin-top: 3rem;        
+        margin-top: 3rem;
     }
 
     .social-icon {
         margin-right: 0.7rem;
     }
 }
-
