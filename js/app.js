@@ -1,6 +1,6 @@
-// Run on ready
+// Run on DOM Ready
 $(function () {
-    // Mobile Menu
+    // Mobile menu
     const btnHamburger = $("#btnHamburger");
 
     btnHamburger.click(function () {
@@ -34,7 +34,15 @@ $(function () {
 });
 
 
-// Projects page animation
+// Run on Window Load
+$(window).on("load", function() {
+    // Project preview card heights
+    cardHeightNormalization("#project-previews .project-card");
+    console.log("Window loaded.");
+});
+
+
+// Projects Page Animation
 function seeMore(id) {
     const details = $(`#${id} .project-details`);
 
@@ -68,7 +76,7 @@ function goToProject() {
 }
 
 
-// Normalize card heights
+// Normalize Card Heights
 function cardHeightNormalization(cards) {
     var items = $(cards),
         heights = [],
