@@ -11964,6 +11964,19 @@ main {
   transition: all 250ms ease-in-out;
 }
 
+@media (max-width: 991.98px) {
+  #project-previews .project-card .project-desc {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #project-previews .project-card .project-desc {
+    margin-bottom: 0;
+    padding: 1rem 1.25rem;
+  }
+}
+
 #project-previews .project-card:hover {
   color: #2170c4;
   border-color: #5a9fe4;

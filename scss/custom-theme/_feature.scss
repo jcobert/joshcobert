@@ -132,6 +132,15 @@
             color: white;
             text-shadow: 0 0 1rem black;
             transition: all 250ms ease-in-out;
+
+            @include media-breakpoint-down(lg) {
+                padding: 1rem 2rem;
+            }
+
+            @include media-breakpoint-down(md) {
+                margin-bottom: 0;
+                padding: 1rem 1.25rem;
+            }
         }
 
         &:hover {
