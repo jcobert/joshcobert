@@ -177,10 +177,20 @@
 
     #geoguessr {
         background-image: url("/assets/images/projects/geoguessr-screen-shot.png");
+        background-clip: content-box;
     }
 
     #live-stream {
         background-image: url("/assets/images/projects/live-stream-screen-shot.png");
+        background-clip: content-box;
+    }
+
+    #coming-soon {
+        background-image: url("/assets/images/projects/coming-soon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-clip: content-box;
     }
 
 }
