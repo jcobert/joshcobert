@@ -47,7 +47,7 @@ function seeMore(id) {
     const details = $(`#${id} .project-details`);
 
     $(`#${id} .see-more`).click(function () {
-        details.slideToggle(150);
+        details.slideToggle(700);
 
         if (details.hasClass("hidden")) {
             details.removeClass("hidden");
@@ -64,7 +64,7 @@ function goToProject() {
     let key = hash.indexOf('-') + 1;
     let id = hash.slice(key);
     const details = $(`#${id} .project-details`);
-    details.slideToggle(150);
+    details.slideToggle(700);
 
     if (details.hasClass("hidden")) {
         details.removeClass("hidden");
