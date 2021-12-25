@@ -12012,10 +12012,20 @@ main {
 
 #project-previews #geoguessr {
   background-image: url("/assets/images/projects/geoguessr-screen-shot.png");
+  background-clip: content-box;
 }
 
 #project-previews #live-stream {
   background-image: url("/assets/images/projects/live-stream-screen-shot.png");
+  background-clip: content-box;
+}
+
+#project-previews #coming-soon {
+  background-image: url("/assets/images/projects/coming-soon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-clip: content-box;
 }
 
 .projects-deck {
@@ -12040,6 +12050,8 @@ main {
 
 .projects-deck .project-title {
   color: #2170c4;
+  margin-top: .7rem;
+  margin-bottom: .7rem;
 }
 
 .projects-deck button {
