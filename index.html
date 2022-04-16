@@ -63,7 +63,7 @@
         <main>
             <div class="container welcome">
                 <h1 class="welcome__heading">Hey, I'm Josh Cobert</h1>
-                <p class="welcome__blurb">Thanks for paying me a visit. I am a web developer and creative professional.
+                <p class="welcome__blurb">Thanks for paying me a visit. I am a software developer and creative professional.
                     I like long walks on the beach and refactoring code. Please check out some of the projects I have
                     worked on and feel free to reach out if you'd like to collaborate!</p>
             </div>
@@ -144,7 +144,7 @@
                     <a class="cta-link" href="https://github.com/jcobert/joshcobert"><i class="fas fa-code"></i>View the source code</a>
                 </div>
                 <div class="footer-copyright">
-                    <h6 class="copyright">© 2021 Josh Cobert</h6>
+                    <h6 id="copyright" class="copyright"></h6>
                 </div>                
             </div>
         </footer>
@@ -155,6 +155,10 @@
     <script src="js/bootstrap/bootstrap.js"></script>
     <!-- Custom JS -->
     <script src="js/app.js"></script>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('copyright').innerText = `© ${currentYear} Josh Cobert`
+    </script>
 </body>
 
 </html>
