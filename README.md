@@ -6,4 +6,4 @@ The site is styled with custom CSS using the Sass preprocessor, along with the h
 
 I plan in future iterations to incorporate technologies such as React and perhaps add some backend functionality to add a contact form or other nifty features.
 
-View the site [here](https://joshcobert.dev).
+View the site [here](https://joshcobert.com).
