@@ -98,7 +98,7 @@
                     <a class="cta-link" href="https://github.com/jcobert/joshcobert"><i class="fas fa-code"></i>View the source code</a>
                 </div>
                 <div class="footer-copyright">
-                    <h6 class="copyright">© 2021 Josh Cobert</h6>
+                    <h6 id="copyright" class="copyright"></h6>
                 </div>                
             </div>
         </footer>
@@ -109,6 +109,10 @@
     <script src="js/bootstrap/bootstrap.js"></script>
     <!-- Custom JS -->
     <script src="js/app.js"></script>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('copyright').innerText = `© ${currentYear} Josh Cobert`
+    </script>
 </body>
 
 </html>
