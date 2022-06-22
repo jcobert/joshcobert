@@ -11329,6 +11329,11 @@ main {
   background-size: 100%;
   background-clip: content-box;
 }
+#project-previews #whos-that {
+  background-image: url("/assets/images/projects/whos-that.png");
+  background-size: 100%;
+  background-clip: content-box;
+}
 
 .projects-deck {
   padding: 2rem 0 2rem;
